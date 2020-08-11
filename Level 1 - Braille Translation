@@ -1,0 +1,97 @@
+public class Solution {
+    public static String solution(String s) {
+    // Your code here
+    String output ="" ;
+    for(int i =0;i<s.length();i++){
+       if(Character.isUpperCase(s.charAt(i))){
+           output+="000001";
+       }
+       switch(Character.toLowerCase(s.charAt(i))){
+           case ' ':
+                      output+="000000";
+                      break;
+           case 'a':
+                      output+="100000";
+                      break;
+           case 'b':
+                      output+="110000";
+                      break;
+           case 'c':
+                      output+="100100";
+                      break;
+           case 'd':
+                      output+="100110";
+                      break;    
+           case 'e':
+                      output+="100010";
+                      break;
+           case 'f':
+                       output+="110100";
+                       break;
+           case 'g':
+                      output+="110110";
+                       break;
+           case 'h':
+                      output+="110010";
+                      break;
+           case 'i':
+                      output+="010100";
+                      break;
+           case 'j':
+                      output+="010110";
+                      break;
+           case 'k':
+                      output+="101000";
+                      break;
+           case 'l':
+                      output+="111000";
+                      break;    
+           case 'm':
+                      output+="101100";
+                      break;
+           case 'n':
+                       output+="101110";
+                       break;
+           case 'o':
+                       output+="101010";
+                       break;
+           case 'p':
+                      output+="111100";
+                       break;
+           case 'q':
+                      output+="111110";
+                      break;
+           case 'r':
+                      output+="111010";
+                      break;
+           case 's':
+                      output+="011100";
+                      break;
+           case 't':
+                      output+="011110";
+                      break;
+           case 'u':
+                      output+="101001";
+                      break;    
+           case 'v':
+                      output+="111001";
+                      break;
+           case 'w':
+                       output+="010111";
+                       break;
+           case 'x':
+                       output+="101101";
+                       break;
+           case 'y':
+                       output+="101111";
+                       break;
+           case 'z':
+                       output+="101011";
+                       break;
+           
+       }
+    }
+
+    return output;
+    }
+}
